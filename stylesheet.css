@@ -1,0 +1,381 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin:0;
+}
+
+body {
+    color: white;
+    font-size: var(--font-size);
+    line-height: 1.5;
+}
+.navbar {
+    background-color: var(--black);
+}
+nav {
+    padding: 6rem 0rem;
+    font-size: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    display:flex;
+    flex-flow: row wrap;
+    gap:2rem;
+    padding: 0;
+    font-family:  var(--mono);
+    justify-content:center;
+    align-items: center;
+}
+
+
+nav li:first-child {
+    flex-basis: 100% ;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 150%;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color:var(--magenta);
+}
+
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: aqua;
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: aqua;
+}
+
+nav [class*="fa-"]:hover {
+    color: var(--magenta);
+}
+
+.button {
+    background-color: var(--magenta);
+    border-radius: 6px;
+    padding:8px;
+    font-family: var(--mono);
+    color: white;
+    text-decoration: none;
+}
+
+nav .button:hover {
+    color: white;
+    background-color: var(--hotmag);
+}
+
+#intro {
+    background-color: var(--black);
+    padding: 6rem 2rem;
+    
+}
+
+#intro div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#intro p {
+    font-family: var(--sans);
+    font-size: 80%;
+    display: block;
+    text-align: left;
+}
+
+#intro span {
+    font-size: 350%;
+    display: block;
+}
+
+#intro .name {
+    color:aqua;
+}
+
+#intro p a {
+    color: var(--magenta);
+}
+
+#intro p a:hover {
+    color:var(--hotmag)
+}
+
+.blue-box {
+    background-color: var(--dkblue) ;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#project-section {
+    font-family: var(--sans);
+    padding: 4rem 1rem;
+    max-width: 1200px;
+}
+
+#project-section h2 {
+    font-family: var(--sans);
+    font-size: 170%;
+    margin-bottom: 30px;
+}
+
+.project p {
+    text-align: left;
+}
+
+.project h3 {
+    text-align: left;
+}
+
+.project h4 {
+    text-align: left;
+}
+
+
+
+#project-section p {
+    font-size: 75%;
+    font-family: var(--sans);
+    background-color: var(--black);
+    margin:10px 0;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+#project-section h4 {
+    font-family: var(--mono);
+    font-size: 75%;
+}
+#project-section h3 {
+    color: aqua;
+}
+
+#project-section ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    padding: 0;
+    font-size: 75%;
+    margin-bottom: 50px;
+}
+
+#project-section .image {
+    border-top:solid 2px aqua;
+    border-left:solid 2px aqua;
+    border-radius: 18px;
+    padding-top:15px;
+    padding-left:15px;
+    margin-bottom:70px;
+    margin-top:30px;
+}
+
+#project-section img {
+    border-radius: 18px;
+    width: 100%;
+}
+
+#contact {
+    background-color: var(--plum);
+    padding: 4rem  2rem;
+    font-family: var(--sans);
+    display: flex;
+    justify-content: center;
+}
+
+#contact h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact div{
+    width:400px;
+}
+
+#contact h4 {
+    text-align: center;
+}
+
+#contact .button:hover{
+    background-color: var(--hotmag);
+}
+
+#footer-section {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#footer-section div {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+#footer-section .educator-name {
+    font-family: var(--sans);
+    font-size: 150%;
+}
+
+#footer-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap ;
+    gap:3rem;
+    justify-content: center;
+}
+
+#footer-section li [class*="fa-"] {
+    font-size: 220%;
+    color: var(--magenta);
+}
+
+#footer-section li [class*="fa-"]:hover {
+    color: var(--hotmag);
+}
+
+#footer-section .educator-license {
+    font-family: var(--sans);
+    font-size: 80%;
+}
+
+.gradient-border {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,49,222,1) 0%, rgba(106,230,255,1) 100%); 
+    height: 2px;
+}
+
+
+@media (min-width: 800px){
+    nav li:first-child {
+        flex-basis: 50%;
+        text-align: left;
+    }
+
+    nav {
+        padding: 4rem 2rem;
+    }
+
+    nav li:first-child {
+        flex-basis: auto ;
+        text-align: left;
+        margin-right: auto;
+    }
+
+    #intro {
+        padding: 10rem 0rem;
+            
+    }
+
+    #intro div {
+        padding:0 2rem
+    }
+
+    .project p {
+        text-align: right;
+    }
+    
+    .project h3 {
+        text-align: right;
+    }
+    
+    .project h4 {
+        text-align: right;
+    }
+
+    #project-section .project ul {
+        justify-content: flex-end;
+    }
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+    #project-section .project .image{
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+
+    #project-section .project article{
+        grid-column: 5/11;
+        grid-row: 1/2;
+        order: 2;
+    }
+    #project-section .inverse article{
+        grid-column: 1/7;
+        grid-row: 1/2;
+        text-align: left;
+        order: 2;
+    }
+
+    #project-section .inverse .image{
+        grid-column: 6/11;
+        grid-row: 1/2;
+
+    }
+
+    .inverse p {
+        text-align: left;
+    }
+    
+    .inverse h3 {
+        text-align: left;
+    }
+    
+    .inverse h4 {
+        text-align: left;
+    }
+
+    #project-section .inverse ul {
+        justify-content: flex-start;
+    }
+}
